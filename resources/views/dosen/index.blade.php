@@ -66,7 +66,11 @@
         |
         <a href="{{ route('mahasiswa.index') }}">Data Mahasiswa</a>
         |
-        <a href="{{ route('matakuliah.index') }}">Data Matakuliah</a>
+        <a href="{{ route('matakuliah.index') }}">Matakuliah</a>
+        |
+        <a href="{{ route('ruangan.index') }}">Ruangan</a>
+        |
+        <a href="{{ route('jadwalKuliah.index') }}">Jadwal Kuliah</a>
     </p>
 
     <table>

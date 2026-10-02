@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 # [Fillable(['nim', 'nama', 'jurusan', 'email', 'angkatan'])]
 class Mahasiswa extends Model
@@ -19,6 +20,7 @@ class Mahasiswa extends Model
         'jurusan',
         'email',
         'angkatan',
+        'kelas_id'
     ];
 
     protected function casts(): array
@@ -26,5 +28,10 @@ class Mahasiswa extends Model
         return [
             'angkatan' => 'integer',
         ];
+    }
+
+    protected function kelas(): BelongsTo
+    {
+        return $this->belongsTo(Kelas::class);
     }
 }

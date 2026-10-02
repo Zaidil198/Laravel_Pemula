@@ -35,6 +35,7 @@ class MatkulController extends Controller
         'nama_matakuliah' => ['required', 'string','max:100'],
         'dosen' => ['required', 'string','max:100'],
         'SKS' => ['required', 'integer','min:1', 'max:10'],
+        'semester' => ['required', 'integer','min:1', 'max:10'],
         ]);
 
         Matkul::create($validated);
@@ -61,6 +62,7 @@ class MatkulController extends Controller
         'nama_matakuliah' => ['required', 'string','max:100'],
         'dosen' => ['required', 'string','max:100'],
         'SKS' => ['required', 'integer','min:1', 'max:10'],
+        'semester' => ['required', 'integer','min:1', 'max:10'],
 
         ]);
 

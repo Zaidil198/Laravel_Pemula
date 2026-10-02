@@ -74,6 +74,11 @@
             <input type="number" id="SKS" name="SKS" value="{{ old('SKS') }}" min="1" max="10" required>
         </p>
 
+        <p>
+            <label for="semester">Semester</label><br>
+            <input type="number" id="semester" name="semester" value="{{ old('semester') }}" min="1" max="10" required>
+        </p>
+
         <button type="submit">Simpan</button>
         <a href="{{ route('matakuliah.index') }}"><button>Batal</button> </a>
     </form>

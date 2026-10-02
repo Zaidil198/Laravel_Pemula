@@ -16,13 +16,15 @@ class Matkul extends Model
         'kode_matakuliah',
         'nama_matakuliah',
         'dosen',
-        'SKS', 
+        'SKS',
+        'semester' 
     ];
 
     protected function casts(): array
     {
         return [
             'SKS' => 'integer',
+            'Semester' => 'integer',
         ];
     }
 }

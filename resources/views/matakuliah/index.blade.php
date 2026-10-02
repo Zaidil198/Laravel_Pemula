@@ -67,6 +67,13 @@
         <a href="{{ route('dosen.index') }}">Data Dosen</a>
         |
         <a href="{{ route('mahasiswa.index') }}">Data Mahasiswa</a>
+        |
+        <a href="{{ route('ruangan.index') }}">Ruangan</a>
+        |
+        <a href="{{ route('kelas.index') }}">Kelas</a>
+        |
+        <a href="{{ route('jadwalKuliah.index') }}">Jadwal Kuliah</a>
+    </p>
     </p>
 
     <table>
@@ -77,6 +84,7 @@
                 <th>Nama Matakuliah</th>
                 <th>Dosen</th>
                 <th>SKS</th>
+                <th>Semester</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -89,6 +97,7 @@
     <td>{{ $matkul-> nama_matakuliah }}</td>
     <td>{{ $matkul-> dosen }}</td>
     <td>{{ $matkul-> SKS }}</td>
+    <td>{{ $matkul-> semester }}</td>
     <td>
         <a href="{{ route('matakuliah.edit', $matkul->id) }}"><button>Edit Matakuliah</button></a>
         <form action="{{ route('matakuliah.destroy', $matkul->id) }}" method="POST" style="display: inline"

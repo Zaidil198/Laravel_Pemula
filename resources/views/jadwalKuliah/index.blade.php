@@ -51,7 +51,7 @@
             <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $jk->kelas->nama_kelas }}</td>
-                <td>{{ $jk->mataKuliah->nama_matakuliah }}</td>
+                <td>{{ $jk->matakuliah->nama_matakuliah }}</td>
                 <td>{{ $jk->dosen->nama }}</td>
                 <td>{{ $jk->ruangan->nama }} ({{ $jk->ruangan->kode_ruangan }})</td>
                 <td>{{ $jk->hari }}</td>
